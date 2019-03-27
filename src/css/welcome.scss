@@ -1,0 +1,13 @@
+.welcome-container {
+  display: flex;
+  // justify-content: center;
+  justify-content: space-around;
+  flex-flow: column;
+  align-items: center;
+  padding: 25px;
+  // overflow: scroll;
+}
+
+#welcome { 
+  background-image: url("../assets/img/meghan-holmes-779221-unsplash.jpg");
+}

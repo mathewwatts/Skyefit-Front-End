@@ -1,0 +1,151 @@
+$blue: #0072BC;
+$yellow: #fefe8a;
+
+.user-profile {
+    .main-container {
+        height: 80vh;
+        margin-bottom: 20px;
+        .content-container {
+            // background: red;
+            width: 100%;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: center;
+            width: 90vw;
+            h1 {
+                font-size: 20px;
+                color: $blue;
+            }
+            .column {
+                display: flex;
+                flex-flow: column;
+                justify-content: flex-start;
+
+                // background: pink;
+                width: 370px;
+                // height: 100%;
+                // overflow: scroll;
+            }
+            .personal-info, .contact, .personal-att  {
+                display: flex;
+                flex-flow: column;
+            }
+            .personal-info {
+                img{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 100%;
+                    margin: 0px 0px 10px 10px;
+                }
+                .title{
+                    height: 53.13px;
+                    // background: red;
+                }
+                form {
+                    justify-content: flex-start;
+                    // background: yellow;
+                    height: 100%;
+                    font-size: 13px;
+                    .radio-input {
+                        display: flex;
+                        // align-items: center;
+                        justify-content: space-between;
+                        width: 100px;
+                        .radio {
+                            margin: 0;
+                            width: 20px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+                // background: blue;
+                // height: 100%;
+            }
+            .contact {
+                // background: purple;
+            }
+            .personal-att {
+                input {
+                    width: 80px;
+                    font-size: 8px;
+                    border: 1px solid $blue;
+                    height: 20px;
+                    color: $blue;
+                }
+                input::placeholder{
+                    color: $blue;
+                }
+                button {
+                }
+                .title {
+                    height: 55.63px;
+                }
+                .pinches {
+                    width: 95%;
+                    flex-flow: column;
+                    .field{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    button {
+                        margin: 0;
+                    }
+                }
+            }
+            .directory {
+                // background: lime;
+                // overflow: scroll;
+                display: flex;
+                flex-flow: column;
+                button {
+                    width: 150px;
+                }
+                .delete {
+                    background: rgba($color: red, $alpha: 0.7)
+                }
+            }
+            .notes {
+                overflow: scroll;
+                // text-align: left;
+                .note {
+                    height: 190px;
+                    align-items: flex-start;
+                    flex-flow: column;
+                    justify-content: flex-start;
+                }
+                form {
+                    textarea {
+                        background: transparent;
+                        width: 85%;
+                        height: 300px;
+                    }
+                }
+            }
+            
+            .title{
+                display: flex;
+                margin: 5px;
+                justify-content: space-between;
+            }
+            .box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                // border: 0.5px solid white;
+                margin: 5px;
+                height: 30px;
+                font-size: 12px;
+                // background: $yellow;
+                background: rgba($color: white, $alpha: 0.5)
+            }
+            
+        }
+    }
+}
+
+#user-profile { 
+    background-image: url("../assets/img/bruce-mars-558705-unsplash.jpg");
+}

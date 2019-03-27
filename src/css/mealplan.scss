@@ -1,0 +1,122 @@
+$blue: #0072BC;
+$yellow: #fefe8a;
+
+.meal-plan{
+  .main-container{
+    height: 80vh;
+    margin-bottom: 20px;
+    .content-container{
+      width: 100%;
+      flex-flow: column;
+      justify-content: flex-start;
+      width: 90vw;
+      .foodlist {
+        // background: $yellow;
+        width: 260px;
+        height: 150px;
+        overflow: scroll;
+        margin-bottom: 10px;
+        p:hover{
+          cursor: pointer;
+        }
+      }
+      .mealPlanDays {
+        display: flex;
+        justify-content: center;
+        button:hover {
+          background-color: transparent;
+          border: 1px solid black;
+          font-weight: 400;
+        }
+      }
+      .display{
+        // background: red;
+        width: 100%;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: center;
+        // align-content: flex-end;
+        height: 80vh;
+        overflow: scroll;
+        p{
+          font-size: 12px;
+        }
+        .display-meal, .add-meal{
+          width: 540px;
+          margin: 5px;
+          height: 63vh;
+          margin-bottom: 0;
+          overflow: scroll;
+          display: flex;
+          // border: 1px solid black;
+          // border-bottom: none;
+          background: rgba($color: white, $alpha: 0.6);
+          border-radius: 5px;
+        }
+        .display-meal{
+          flex-flow: column;
+          align-items: center;
+          h1{
+            color: $blue;
+          }
+          .meal {
+            background: $yellow;
+            border: 0.5px solid white;
+            padding: 20px;
+            width: 300px;
+            margin: 5px;
+            button {
+              height: 20px;
+              padding-top: 2px;
+            }
+            button:hover{
+              background: white;
+            }
+          }
+        }
+        .add-meal{
+          // background: red;
+          flex-flow: column;
+          // justify-content: flex-start;
+          // justify-content: flex-end;
+          
+          button {
+            width: 100px;
+          }
+          .showfood{
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+          }
+          .linetop{
+            border-top: 1px solid $yellow;
+            width: 400px;
+          }
+        }
+        .buttons{
+          width: 100%;
+          button{
+            width:70px;
+          }
+          // position: fixed;
+          // margin-top: 50%;
+          // margin-left: 12%;
+          // margin-top: 25%;
+          // background: yellow;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+#meal-plan-image { 
+  background-image: url("../assets/img/bruce-mars-558705-unsplash.jpg");
+}
+
+.mealplan-content-container {
+  padding: 25px;
+  overflow: scroll;
+}

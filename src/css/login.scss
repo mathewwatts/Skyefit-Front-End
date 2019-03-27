@@ -1,0 +1,10 @@
+.content-container {
+  display: flex;
+  justify-content: space-around;
+
+  .error-msg {
+    p{
+      color: red;
+    }
+  }
+}

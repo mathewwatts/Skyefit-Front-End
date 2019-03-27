@@ -1,0 +1,167 @@
+$yellow: #fefe8a;
+$blue: #0072BC;
+
+.calendar-container,
+.calendar,
+.calendar-header,
+td,
+tr {
+    padding: 0;
+    margin: 0;
+
+}
+
+.calendar-container {
+    // border: 1px solid white;
+    padding-bottom: 25px;
+}
+
+.calendar {
+    // background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar-header {
+    // border-bottom: 1px solid black;
+    font-size: 1.6em;
+}
+
+.calendar-header td {
+    border-spacing: 0;
+    // padding-left: 5px;
+}
+
+.day,
+.empty-slot,
+.week-day {
+    text-align: center;
+    height: 40px;
+}
+
+.week-day {
+    font-size: 0.8em;
+    color: black;
+}
+
+.day {
+    font-size: 0.8em;
+    color: black;
+}
+
+.day {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.current-day {
+    background-color: rgba($color: $blue, $alpha: 0.9);
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5%;
+    color: white;
+}
+.selected-day {
+    background-color:rgba($color: black, $alpha: 0.125);
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5%;
+    color: black;
+}
+
+.session {
+    background-color: rgba($color: $yellow, $alpha: 0.9);
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5%;
+}
+
+.month-popup {
+    position: absolute;
+    padding: 5px;
+    background: white;
+    // border: 2px solid skyblue;
+}
+
+.month-popup div {
+    padding: 0.3em;
+}
+
+.nav-month {
+    position: absolute;
+    top: 0.6em;
+    font-size: 0.6em;
+    right:3px;
+}
+
+.prev {
+}
+
+.next {
+}
+
+.editor-year {
+    max-width: 3.6em;
+}
+
+.label-month,
+.label-year {
+    font-size: 0.6em;
+    color: black;
+}
+
+.label-month {
+    cursor: pointer;
+}
+
+#user-sessions { 
+    background-image: url("../assets/img/r-h-lee-609997-unsplash.jpg");
+    .content-container {
+        // background: red;
+        width: 100%;
+        justify-content: flex-start;
+        .calendar-container {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            // background: blue;
+            min-height: 200px;
+            .calendar-header {
+                font-size: 30px;
+                font-weight: 700;
+            }
+            
+        }
+        .card-cont{
+            display: flex;
+            flex-flow: row wrap;
+            width: 400px;
+        }
+        .sess-card {
+            img {
+                width: 80px;
+                height: 80px;
+                padding:10px;
+                border-radius: 100%;
+                object-fit: cover;
+            
+            }
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            background: rgba($color: white, $alpha: 0.7);
+            margin: 10px;
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+}
+

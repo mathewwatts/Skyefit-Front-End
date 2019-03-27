@@ -1,0 +1,68 @@
+$yellow: #fefe8a;
+
+.list-user{
+    .main-container {
+        overflow: scroll;
+    }
+    .content-container {
+        margin-top: 30px;
+        width: 100%;
+        padding: 5px;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        input {
+            margin:20px;
+        }
+    }
+
+    .user-card {
+        width: 300px;
+        // border: 0.5px solid white;
+        margin-bottom: 5px;
+        // background: $yellow;
+        background: rgba($color: #ffffff, $alpha: 0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 30px;
+        height: 50px;
+        .text {
+            text-decoration: none;
+            color: black;
+        }
+        .text:hover {
+            font-weight: bold;
+        }
+        img {
+            object-fit: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+        }
+    }
+    .button {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 10px;
+        min-width: 30px;
+        outline: none;
+        font-size: 12px;
+        // font-family: 'Roboto Mono', monospace;  
+        margin: 20px;
+    }
+    .button:hover {
+        background-color: $yellow;
+        border: 1px solid $yellow;
+        font-weight: bold;
+    }
+}
+
+
+#admin-users {
+    background-image: url("../assets/img/bruce-mars-558705-unsplash.jpg");
+}  
